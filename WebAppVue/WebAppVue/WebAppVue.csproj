@@ -95,6 +95,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="src\common.js" />
     <Content Include="src\detay.js" />
     <Content Include="webpack.config.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
