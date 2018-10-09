@@ -1,6 +1,6 @@
 <template>
     <div>
-  <h1 @click="sayHello">Hello Component</h1>
+  <h1 @click="sayHello">Hello Component detay oley</h1>
    <clock></clock>
   </div>
 </template>

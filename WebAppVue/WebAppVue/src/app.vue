@@ -1,28 +1,18 @@
 <template>
-<div id="app">
-    <h1>{{ msg }}</h1>
-    <clock></clock>
-    <ul>
-        <li v-for="u in users">
-            {{u.name}}-{{u.id}}{{u.email}}
-        </li>
-    </ul>
-  <h3>Data</h3>
-  <ul>
-    <li v-for="d in fakeDatas">{{d.name}}--{{d.age}}</li>
-  </ul>
-</div>
+  <div>
+   
+  </div>
 </template>
-
 <script>
 import Clock from './components/clock.vue'
 import User from './user.js'
 import { portalApp } from './common.js';
 var p=portalApp;
 export default {
+    template: '#app',
     data() {
         return {
-            msg: 'Welcome to Vue.js World2!',
+            msg: 'Welcome to Vue.js World3!',
             users: [],
             fakeDatas:[],
             p:portalApp
@@ -42,7 +32,11 @@ export default {
                     res.forEach(e=>{
                       let user=new User(e);
                       this.users.push(user);
-                    })
+
+                    });
+                    console.log('dfvd:'+this.users[0].id);
+
+                  
                 });
            portalApp.getDataFromRemote(url = "/Home/FakeData",{}).done(res=>{
               this.fakeDatas=res;

@@ -4,8 +4,22 @@
 }
 
 
-<div id="app" class="container">
+<div id="app2" class="container">
     @*<app></app>*@
 </div>
-@Html.ActionLink("Detay","Detay")
+<div id="app">
+    <h1>{{ msg }}</h1>
+    <clock></clock>
+    <ul>
+        <li v-for="u in users">
+            {{u.name}}-{{u.id}}{{u.email}}
+        </li>
+    </ul>
+    <h3>Data</h3>
+    <ul>
+        <li v-for="d in fakeDatas">{{d.name}}--{{d.age}}</li>
+    </ul>
+</div>
+@Html.ActionLink("Detay", "Detay")
+@Html.ActionLink("First", "FirstComponent")
 <script src="/dist/main.bundle.js"></script>

@@ -2,11 +2,16 @@ var path = require('path')
 var webpack = require('webpack')
 var IS_DEBUG = process.env.NODE_ENV !== 'production';
 module.exports = {
-    entry: { main: './src/main.js', detay: './src/detay.js' },
+    entry: { main: './src/main.js', detay: './src/detay.js', first:'./src/first.js' },
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
         filename: '[name].bundle.js'
+    },
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.js'
+        }
     },
     module: {
         loaders: [

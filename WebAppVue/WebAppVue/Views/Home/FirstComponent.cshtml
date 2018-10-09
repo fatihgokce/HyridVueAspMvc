@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "FirstComponent";
+}
+
+<h2>FirstComponent</h2>
+<div id="app">
+    <h3>@ViewBag.Title</h3>
+    {{ vueMessage }}
+    <first-component v-bind:time="new Date()"></first-component>
+    <h2>Clock</h2>
+    <clock></clock>
+</div>
+<script src="/dist/first.bundle.js"></script>

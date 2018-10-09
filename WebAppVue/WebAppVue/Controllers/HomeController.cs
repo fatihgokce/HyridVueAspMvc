@@ -24,6 +24,10 @@ namespace WebAppVue.Controllers
         {
             return View();
         }
+        public ActionResult FirstComponent()
+        {
+            return View();
+        }
         public JsonResult FakeData()
         {
             List<Fake> dts = new List<Fake> {

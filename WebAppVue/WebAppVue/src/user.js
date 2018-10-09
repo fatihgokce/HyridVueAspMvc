@@ -1,5 +1,6 @@
 ﻿export default class User {
     constructor(obj) {
+        //console.log("in consructor:"+JSON.stringify(obj));
         this.id;
         this.username;
         this.address;
